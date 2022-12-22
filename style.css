@@ -1,0 +1,68 @@
+.forma {
+  animation-duration: 3s;
+  animation-name: Plavno;
+}
+
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  transition: all 0.5s ease;
+  display: none;
+}
+
+.button {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.open_button {
+  height: 50px;
+  color: #fff;
+  font-size: 30px;
+  border: none;
+  background: #c25a2a;
+  border-radius: 5px;
+}
+
+
+.popup_open {
+  display: block;
+}
+
+.popup__container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  background: #c25a2a;
+  color: #fff;
+  border-radius: 50px;
+  padding: 50px;
+}
+
+.forma button {
+  border-radius: 50px;
+}
+
+@keyframes Plavno {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .popup__container {
+    width: auto;
+  }
+}
